@@ -18,7 +18,7 @@ function App() {
   return (
     <AuthProvider>
       <CitiesProvider>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter>
           <Routes>
             <Route index element={<Homepage />} />
             <Route path="product" element={<Product />} />
